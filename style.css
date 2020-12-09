@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,500,600,700');
+@import url('http://www.hayfonts.com/files.html');
+@import 'css/bootstrap/bootstrap.min.css';
+@import 'css/others/animate.css';
+@import 'css/others/magnific-popup.css';
+@import 'css/others/owl.carousel.min.css';
+@import 'css/others/elegant-font.css';
+@import 'css/others/themify-icons.css';
+@import 'css/others/productitem.css';
+
+
+body {
+
+
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: auto;
+    overflow-x: hidden;
+}
+
+.fa {
+    color: #206769;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #535353d6;
+    line-height: 1.25;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+a,
+a:hover {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #08DEC2;
+
+
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.fancy-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* *************************Preloader **************************/
+
+#preloader {
+    overflow: hidden;
+    background: #206769;
+    background: linear-gradient(to right, #08DEC2, #206769);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.loader {
+    width: 46px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -23px;
+    z-index: 9;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    30% {
+        -webkit-transform: translateY(-0.25em);
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+    }
+    70% {
+        -webkit-transform: translateY(0.25em);
+    }
+}
+
+.loader .inner1,
+.loader .inner2,
+.loader .inner3 {
+    display: inline-block;
+    margin: 0.125em;
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid #fff;
+    border-radius: 1em;
+    background-color: #fff;
+    -webkit-transform-origin: 50%;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loader .inner2 {
+    -webkit-animation-delay: 0.1875s;
+}
+
+.loader .inner3 {
+    -webkit-animation-delay: 0.375s;
+}
+
+/**************************** Basic CSS ***********************/
+
+.section-padding-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-padding-120-0 {
+    padding-top: 120px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-120 {
+    padding-top: 0;
+    padding-bottom: 120px;
+}
+
+.section-padding-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-padding-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section-padding-100-0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section-padding-200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section-padding-200-0 {
+    padding-top: 200px;
+    padding-bottom: 0;
+}
+
+.section-padding-0-200 {
+    padding-top: 0;
+    padding-bottom: 200px;
+}
+
+.section-padding-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section-padding-80-50 {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.section-padding-20-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#scrollUp {
+    bottom: 10%;
+    font-size: 18px;
+    right: 5%;
+    width: 40px;
+    background-color: #5a5c68;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px 0 0 2px;
+    border-radius: 50%;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+#scrollUp:hover {
+    background-color: #7450fe;
+}
+
+.section-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.section-heading.heading-white h2,
+.section-heading.heading-white p {
+    color: #fff;
+}
+
+.section-heading-line {
+    width: 50px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+
+.bg-overlay:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 8, 29, 0.7);
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+/* Header Area CSS */
+
+#header-sticky-wrapper {
+    position: absolute;
+    width: 100%;
+}
+
+.header_area {
+    background-color: #206769;
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    height: 62px;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.is-sticky .header_area {
+    /* background-color: rgba(63,184,167,0.93);*/
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.header_area .navbar-brand {
+    margin-top: 34px;
+    margin-right: 26%;
+    width: 136px;
+    height: 114px;
+    background: url(./img/Logo.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #206769;
+    border-radius: 50%;
+}
+
+
+.header_area .navbar {
+    padding: 0;
+}
+
+.header_area .navbar .navbar-nav {
+    width: 100%;
+}
+
+
+.navbar-expand-lg .navbar-nav li {
+    font-size: 12px;
+}
+
+.navbar-expand-lg a {
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/*search area  css */
+
+.searchbar {
+    position: relative;
+    left: 100px;
+}
+
+.searchbar .fa-search {
+    color: #fff;
+    margin-left: 100px;
+}
+
+
+#search_input {
+    display: none;
+
+
+}
+
+.navbar-item .search_input {
+    width: 50%;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+
+}
+
+/*how to buy css */
+/*.to-buy {*/
+/*    margin-left: 43%;*/
+/*}*/
+
+.how_to_buy {
+    border: 2px solid #fff;
+    border-radius: 1px;
+    background: none;
+    padding: 7px 32px;
+
+}
+
+/* hero area css */
+
+.papuk-hero-area {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 600px;
+    margin-top: 25px;
+}
+
+
+.carousel-indicators li {
+    text-indent: 0;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 100%;
+    line-height: 30px;
+    color: #69BDB0;
+    background-color: #69BDB0;
+    transition: all 0.25s ease;
+
+&
+.active,
+
+&
+:hover {
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #DFF682;
+}
+
+}
+
+
+.d-block {
+    height: 650px;
+    position: relative;
+}
+
+
+/* Top Features Area CSS */
+
+.papuk-Feature-area {
+    background-color: rgb(21 104 96 /  0.58);
+    margin-top: 3.5%;
+    padding: 2%;
+}
+
+.papuk-Feature-area .col-6 {
+    padding: 0px;
+}
+
+.papuk-Feature-area .img-block {
+    padding: 0px;
+    width: 100%;
+    height: 546px;
+    background: url(./img/cover.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.papuk-Feature-area h1 {
+    margin: 0px;
+}
+
+.papuk-Feature-area .text-block {
+    padding: 0px;
+    height: 546px;
+    background-color: #FAFFFF;
+
+
+}
+
+.papuk-Feature-area .text-right {
+    text-align: right;
+}
+
+.papuk-Feature-area .text-right-two {
+    padding-left: 10px;
+}
+
+.papuk-Feature-area .text-block p {
+
+    font-family: 'aramian', sans-serif;
+    color: #535353d6;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 900;
+    padding-top: 20%;
+}
+
+.text-block .about-button {
+    position: relative;
+    background: inherit;
+    color: #206769;
+    font-size: 14px;
+    border: none;
+}
+
+/*  products Area CSS */
+
+.papuk-products-area {
+    background: white;
+}
+
+
+.papuk-products-area .carousel-nav-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.papuk-products-area .carousel-item
+.col, .papuk-products-area .carousel-item .col-sm, .papuk-products-area .carousel-item .col-md {
+    margin: 8px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*  fabrics Area CSS */
+.papuk-fabrics-area {
+    background: white;
+}
+
+
+.papuk-fabrics-area .carousel-nav-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.papuk-fabrics-area .carousel-item
+.col, .papuk-fabrics-area .carousel-item .col-sm, .papuk-fabrics-area .carousel-item .col-md {
+    margin: 8px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.see-more {
+    margin-top: 83px;
+    background-color: rgba(63, 184, 167, 0.93);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    width: 188px;
+}
+
+/* Testimonials Area CSS */
+.papuk-testimonials-area {
+    background-color: #F3F3F3;
+    padding-bottom: 40px;
+}
+
+.papuk-testimonials-area h1 {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 35px;
+}
+
+.testimonials-slides {
+    position: relative;
+    z-index: 1;
+
+}
+
+.testimonial-thumbnail {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 70px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 170px;
+    flex: 0 0 170px;
+    border-radius: 50%;
+    background: url(./img/clients-img.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    margin-left: 5px;
+}
+
+.testimonial-thumbnail img {
+    border-radius: 50%;
+
+}
+
+.testimonilas-content span.quote {
+    font-size: 120px;
+    line-height: 1;
+    background: #B1B2AC;
+    background: -webkit-linear-gradient(to right, #206769, #206769);
+    background: -webkit-linear-gradient(left, #206769, #206769);
+    background: linear-gradient(to right, #206769, #206769);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.papuk-testimonials-area i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.papuk-testimonials-area p {
+    margin-top: 3%;
+    font-size: 15px;
+}
+
+.testimonilas-content h5 {
+    color: #0000008c;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -30px;
+    margin-bottom: 0;
+}
+
+.testimonilas-content h6 {
+    margin-top: 15px;
+}
+
+.testimonilas-content h6 span {
+    font-size: 14px;
+    color: #b5aec4;
+}
+
+.testimonials-slides .owl-prev,
+.testimonials-slides .owl-next {
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: -4%;
+    color: #c2c1ca;
+    z-index: 9;
+}
+
+.testimonials-slides .owl-next {
+    left: auto;
+    right: -4%;
+}
+
+
+/* Footer Area CSS */
+
+.Papuk-footer-area {
+    width: 100%;
+    height: 393px;
+    background: url(./img/about.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Papuk-footer-area .col-6 {
+    padding: 0px;
+}
+
+.Papuk-footer-area .col-4 {
+    margin: 17% 0% 17% 10%;
+    padding: 0px;
+}
+
+.Papuk-footer-area .col-4 p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.Papuk-footer-area iframe {
+    width: 100%;
+    height: 393px;
+}
+
+
+.Papuk-footer-area li {
+    padding-bottom: 9px;
+    color: #fff;
+
+}
+
+.Papuk-footer-area li a {
+    color: #fff;
+}
+
+.Papuk-footer-area i {
+    padding-right: 10px;
+    font-size: 15px;
+    color: #2bc0a4;
+}
+
+
+.Papuk-footer-area .page {
+    padding-right: 10px;
+    font-size: 25px;
+    color: #2bc0a4;
+}
+
+@media only screen and (max-width: 1227px) {
+    .header_area .navbar-brand {
+        margin-top: 0;
+        margin-right: 10%;
+        width: 115px;
+        height: 70px;
+    }
+}
+
+
+
+
+
